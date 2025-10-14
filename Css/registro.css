@@ -1,0 +1,222 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A192F;
+    font-family: monospace, sans-serif;
+    color: #E6F1FF;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*##########################
+###    Estilos header    ###
+##########################*/
+
+header{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+    border: #444847 solid;
+    background-color: #444847;
+    border-bottom: #181e29f9 solid;
+    padding: 0.5rem
+}
+
+h2{
+    padding-left: 0.5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-style: italic
+}
+
+h2:hover{
+    color: #444847;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+h2:hover{
+    cursor: pointer;
+}
+
+
+/*------------------------------------------------------*/
+
+/* ######################
+###    Estilos nav    ###
+#######################*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+li a{
+    color: cornsilk;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+li a:hover{
+    color: #444847;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/*#############################
+###    Fin de Styles Nav    ###
+#############################*/
+
+/*--------------------------------------------------*/
+
+/*######################
+###    Fin Header    ###
+#######################*/
+
+/*------------------------------------------------------------*/
+
+/*################################
+###    Estilos contenedor/h1/p/a    ###
+################################*/
+
+.contenedor{
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contenedor p a{
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contenedor p a:hover{
+    color: #444847;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/*########$$$$$$$$$########################
+###    fin Estilos contenedor/h1/p/a    ###
+###################$$$$$$$$$#############*/
+
+/*--------------------------------------------------*/
+
+/*################################
+###    Estilos formulario    ###
+################################*/
+
+
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: inherit;
+    margin: 1rem;
+}
+
+.registro form{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #081325;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.form-group input{
+    color: #E6F1FF;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #050b16;
+}
+
+
+.registro form button{
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;;
+}
+
+.registro form  a{
+    display: flex;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-top: 0.5rem;
+}
+
+.registro form a:hover{
+    color: #444847;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+/*#####################################
+###    Fin de Estilos formulario    ###
+#####################################*/
+
+/*----------------------------------------------------*/
+
+/*################################
+###    Estilos footer    ###
+################################*/
+
+footer{
+    padding: 0.5rem 0 2rem 0;
+}
+
+
+.condiciones{
+    text-align: center;
+    width: 100%;
+    font-size: small;
+
+}
+
+
