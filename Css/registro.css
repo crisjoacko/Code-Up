@@ -24,7 +24,9 @@ header{
     border: #444847 solid;
     background-color: #444847;
     border-bottom: #181e29f9 solid;
-    padding: 0.5rem
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center
 }
 
 h2{
@@ -34,7 +36,13 @@ h2{
     font-style: italic
 }
 
-h2:hover{
+h2 a{
+    color: cornsilk;
+    text-decoration: none;
+}
+
+
+h2 a:hover{
     color: #444847;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -68,6 +76,7 @@ nav ul{
     width: 100%;
     height: auto;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 

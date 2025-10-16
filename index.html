@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <header class="cabecera">
-        <h1><a href="#"> Code Up</a></h1>
+    <header class="cabecera" id="home">
+        <h1><a href="home.html"> Code Up</a></h1>
         <nav class="nav-bar">
             <ul>
                 <li class="list"><a href="#">Nosotros</a></li>
@@ -20,8 +20,8 @@
             </ul>
         </nav>
         <div class="lg-grup">
-            <button>Iniciar Sesion</button>
-            <button>Empezar a aprender</button>
+            <a href="registro.html" class="btn-login">Iniciar Sesion</a>
+            <a class="btn-login" href="#contenedor-cursos">Empezar a aprender</a>
         </div>
     </header>
     <main>
@@ -30,7 +30,7 @@
             <p>
                 Nuestra mision es democratizar el acceso a la educación en la tecnologia. Aprende a programar desde cero, desarrolla proyectos reales y preparate para una carrera en la industria digital. Todo de forma gratuita.
             </p>
-            <section class="inicio">
+            <section class="inicio" >
                 <button class="opciones">
                     Comienza tu Aventura
                 </button>
@@ -92,7 +92,7 @@
                 ¿Qué Aprenderás?
             </h2>
         </header>
-        <div class="contenedor-cursos">
+        <div class="contenedor-cursos" id="contenedor-cursos">
             <article class="tarjeta-curso">
                     <img src="" alt="">
                     <h3>
@@ -101,7 +101,7 @@
                     <p>
                         Crea sitios web y aplicaciones web dinámicas usando HTML, CSS, JavaScript y frameworks populares.
                     </p>
-                    <a href="/enlace-al-curso" class="boton-acceso">
+                    <a href="#" class="boton-acceso">
                         Ver Curso
                     </a>
             </article>
@@ -113,7 +113,7 @@
                 <p>
                     Analiza datos, construye modelos de aprendizaje automático y obtiene información valiosa usando Python, SQL y herramientas de visualización de datos.
                 </p>
-                    <a href="/enlace-al-curso" class="boton-acceso">
+                    <a href="#" class="boton-acceso">
                         Ver Curso
                     </a>
             </article>
@@ -125,7 +125,7 @@
                 <p>
                     Crea aplicaciones móviles nativas para iOS y Android usando Swift, Kotlin y React Native.
                 </p>
-                    <a href="/enlace-al-curso" class="boton-acceso">
+                    <a href="#" class="boton-acceso">
                         Ver Curso
                     </a>
             </article>
@@ -137,7 +137,7 @@
                 <p>
                     Crea aplicaciones móviles nativas para iOS y Android usando Swift, Kotlin y React Native.
                 </p>
-                    <a href="/enlace-al-curso" class="boton-acceso">
+                    <a href="#" class="boton-acceso">
                         Ver Curso
                     </a>
             </article>
@@ -149,7 +149,7 @@
                 <p>
                     Crea aplicaciones móviles nativas para iOS y Android usando Swift, Kotlin y React Native.
                 </p>
-                    <a href="/enlace-al-curso" class="boton-acceso">
+                    <a href="#" class="boton-acceso">
                         Ver Curso
                     </a>
             </article>
@@ -163,7 +163,7 @@
             No necesitas experiencia previa. Solo ganas de aprender y cambiar tu futuro. El bootcamp es 100% gratuito. Regístrate y comienzá a aprender.
         </p>
         <div class="cont-comenzar">
-            <button class="btn-comienzo">Comenzar a Aprender</button>
+            <button class="btn-comienzo" id="curso">Comenzar a Aprender</button>
         </div>
     </section>
     <footer>
@@ -171,12 +171,12 @@
             <div class="fin">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="#">
                             Nosotros
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#">
                             Contacto
                         </a>
                     </li>
@@ -192,12 +192,27 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="derechos-reservados">
                 <small>
                     © 2025 CodeUp. Todos los derechos reservados.
                 </small>
             </div>
         </div>
     </footer>
+    <script src="Js/codeup.js"></script>
+    ...
+<script src="Js/codeup.js"></script>
+<script>
+    window.addEventListener("load", () => {
+        if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
+        }
+    });
+</script>
+</body>
+
 </body>
 </html>
