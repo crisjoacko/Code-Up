@@ -7,6 +7,7 @@
     <meta name="author" content="Cristian Joaquín Díaz">
     <title>CodeUp</title>
     <link rel="stylesheet" href="Css/style.css">
+    <script  defer src="Js/codeup.js"></script>
 </head>
 <body>
     <header class="cabecera" id="home">
@@ -20,7 +21,7 @@
             </ul>
         </nav>
         <div class="lg-grup">
-            <a href="registro.html" class="btn-login">Iniciar Sesion</a>
+            <a href="registro.html" class="btn-login" id="btn-lg" role="button">Iniciar Sesion</a>
             <a class="btn-login" href="#contenedor-cursos">Empezar a aprender</a>
         </div>
     </header>
@@ -199,19 +200,8 @@
             </div>
         </div>
     </footer>
-    <script src="Js/codeup.js"></script>
     ...
-<script src="Js/codeup.js"></script>
-<script>
-    window.addEventListener("load", () => {
-        if (window.location.hash) {
-        const target = document.querySelector(window.location.hash);
-        if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-        }
-        }
-    });
-</script>
+
 </body>
 
 </body>
