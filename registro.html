@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate a CodeUp</title>
     <link rel="stylesheet" href="Css/registro.css">
+    <script defer src="Js/registro.js"></script>
 </head>
 <body>
     <header>
         <h2>
-            <a href="index.html">CodeUp</a>
+            <a href="codeup.html">CodeUp</a>
         </h2>
         <nav>
             <ul>
@@ -25,8 +26,6 @@
                 <li>
                     <a href="#">Cursos</a>
                 </li>
-
-
             </ul>
         </nav>
     </header>
@@ -40,7 +39,7 @@
     </div>
     
     <section class="registro">
-        <form method="post">
+        <form method="post" id="form-registro">
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required minlength="3">

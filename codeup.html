@@ -11,18 +11,18 @@
 </head>
 <body>
     <header class="cabecera" id="home">
-        <h1><a href="home.html"> Code Up</a></h1>
+        <h1><a href="codeup.html">Code Up</a></h1>
         <nav class="nav-bar">
             <ul>
                 <li class="list"><a href="#">Nosotros</a></li>
-                <li class="list"><a href="#">Cursos</a></li>
+                <li class="list"><a href="cursos.html">Cursos</a></li>
                 <li class="list"><a href="#">Comunidad</a></li>
                 <li class="list"><a href="#">Recursos</a></li>
             </ul>
         </nav>
         <div class="lg-grup">
-            <a href="registro.html" class="btn-login" id="btn-lg" role="button">Iniciar Sesion</a>
-            <a class="btn-login" href="#contenedor-cursos">Empezar a aprender</a>
+            <a href="registro.html" class="btn-login" id="btn-register" role="button">Registrate</a>
+            <a class="btn-login" href="login.html" role="button" id="btn-login">Iniciar Sesión</a>
         </div>
     </header>
     <main>
@@ -32,10 +32,10 @@
                 Nuestra mision es democratizar el acceso a la educación en la tecnologia. Aprende a programar desde cero, desarrolla proyectos reales y preparate para una carrera en la industria digital. Todo de forma gratuita.
             </p>
             <section class="inicio" >
-                <button class="opciones">
+                <button class="opciones" id="btn-roadmap">
                     Comienza tu Aventura
                 </button>
-                <button class="opciones">
+                <button class="opciones" id="plan" href="roadmap.html">
                     Ver el plan de estudios
                 </button>
             </section>
@@ -133,10 +133,10 @@
             <article class="tarjeta-curso">
                 <img src="" alt="">
                 <h3>
-                    Desarrollador de Apps Mobile
+                    Curso de React
                 </h3>
                 <p>
-                    Crea aplicaciones móviles nativas para iOS y Android usando Swift, Kotlin y React Native.
+                    Aprende a construir interfaces de usuario interactivas y dinámicas con React
                 </p>
                     <a href="#" class="boton-acceso">
                         Ver Curso
@@ -145,10 +145,22 @@
             <article class="tarjeta-curso">
                 <img src="" alt="">
                 <h3>
-                    Desarrollador de Apps Mobile
+                    Curso de Programación Backend
                 </h3>
                 <p>
-                    Crea aplicaciones móviles nativas para iOS y Android usando Swift, Kotlin y React Native.
+                    Aprende a crear APIs y gestionar bases de datos con Node.js, Express y MongoDB.
+                </p>
+                    <a href="#" class="boton-acceso">
+                        Ver Curso
+                    </a>
+            </article>
+            <article class="tarjeta-curso">
+                <img src="" alt="">
+                <h3>
+                    Curso de Python
+                </h3>
+                <p>
+                    Aprende los fundamentos de Python y su aplicación en desarrollo web, análisis de datos e inteligencia artificial.
                 </p>
                     <a href="#" class="boton-acceso">
                         Ver Curso
@@ -164,7 +176,7 @@
             No necesitas experiencia previa. Solo ganas de aprender y cambiar tu futuro. El bootcamp es 100% gratuito. Regístrate y comienzá a aprender.
         </p>
         <div class="cont-comenzar">
-            <button class="btn-comienzo" id="curso">Comenzar a Aprender</button>
+            <button class="btn-comienzo" id="btn-aprender">Comenzar a Aprender</button>
         </div>
     </section>
     <footer>
@@ -200,8 +212,6 @@
             </div>
         </div>
     </footer>
-    ...
-
 </body>
 
 </body>

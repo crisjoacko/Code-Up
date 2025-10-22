@@ -12,5 +12,30 @@ window.addEventListener("load", () => {
 const logueate = document.querySelector('#btn-lg');
 logueate.addEventListener('click', (event) => {
     event.preventDefault();
+    window.location.href = "login.html";
+});
+
+// Evento para el botón "Registrate"
+const registro = document.querySelector('#btn-register');
+registro.addEventListener('click', (event) => {
+    event.preventDefault();
     window.location.href = "registro.html";
+});
+
+
+
+// Evento para el botón "Plan de Estudios"
+
+const planEstudios = document.querySelector('#plan');
+planEstudios.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = "roadmap.html";
+});
+
+
+// Evento para el botón "Empezar a aprender"
+const btnEmpezar = document.querySelector('#btn-init');
+btnEmpezar.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.location.href = "login.html";
 });
