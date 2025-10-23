@@ -1,0 +1,133 @@
+/*
+ * 1. Estilos Base y Reset
+ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117; /* Fondo oscuro (similar a roadmap.sh) */
+    color: #e6edf3;
+    min-height: 100vh;
+}
+
+/*
+ * 2. Estilos del Header y Navegación
+ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #161b22; /* Un tono un poco más claro que el body */
+    border-bottom: 1px solid #30363d;
+}
+
+header h1 a {
+    font-size: 1.8rem;
+    color: #58a6ff; /* Color de acento azul */
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #e6edf3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #58a6ff;
+}
+
+/*
+ * 3. Estilos de la Sección Principal (main)
+ */
+main {
+    text-align: center;
+    padding: 60px 20px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #58a6ff;
+}
+
+main p {
+    font-size: 1.1rem;
+    color: #aeb8c4;
+}
+
+/*
+ * 4. Estilos de la Sección de Hojas de Ruta (fieldset) - EL DISEÑO CLAVE
+ */
+fieldset {
+    /* Quitamos el borde nativo del fieldset */
+    border: none;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+legend {
+    /* Estilo del título */
+    font-size: 1.5rem;
+    color: #e6edf3;
+    margin: 0 auto 30px;
+    padding: 0 10px;
+    text-align: center;
+    border-bottom: 2px solid #30363d;
+}
+
+fieldset ul {
+    /* Usamos GRID para la cuadrícula de tarjetas */
+    display: grid;
+    /* 4 columnas en pantallas grandes, ajustándose automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+fieldset ul li {
+    /* Estilo de la tarjeta de rol individual */
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+fieldset ul li:hover {
+    /* Efecto al pasar el ratón */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+fieldset ul li a {
+    /* Estilo del enlace para que ocupe toda la tarjeta */
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #aeb8c4; /* Texto de color secundario */
+}
+
+fieldset ul li a:hover {
+    color: #58a6ff; /* Resaltar con el color de acento al hacer hover */
+}
