@@ -155,7 +155,10 @@ h1 a:hover{
     cursor: pointer;
     background-color: #3f51b5; /* Ejemplo */
     color: white;
+    text-decoration: none;
 }
+
+
 /*##############################
 ###    Fin de Styles Main    ###
 ##############################*/
