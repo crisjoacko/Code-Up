@@ -1,0 +1,121 @@
+/* global.css */
+
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* Colores */
+    --color-fondo-principal: #0A192F; /* Fondo del body */
+    --color-fondo-secundario: #444847; /* Fondo de cabecera y grupo h2 */
+    --color-fondo-footer: #0c1728;
+    --color-texto-principal: #E6F1FF; /* Texto principal del body */
+    --color-texto-acento: cornsilk; /* Texto de enlaces y títulos */
+
+    /* Colores de Acento y Botones */
+    --color-acento-azul: #3f51b5; /* Azul primario de botones (.opciones, .btn-login, .boton-acceso) */
+    --color-acento-hover-nav: #2c3aa7; /* Hover de botones del header */
+    --color-acento-hover-sec: #536dfe; /* Hover de botones secundarios */
+    --color-borde-tarjeta: #6d758080;
+
+    /* Tipografía */
+    --fuente-monospace: monospace;
+    --fuente-sans-serif: sans-serif;
+    --color-transicion-rapida: 0.3s ease;
+
+    /* Propiedades base */
+    --radius-pequeno: 4px;
+    --padding-header: 0.5rem 1%; 
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-fondo-principal);
+    font-family: var(--fuente-monospace);
+    color: var(--color-texto-principal);
+}
+
+/* =============================
+    Estilos compartidos Header/Nav
+   ============================= */
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: var(--padding-header);
+    background-color: var(--color-fondo-secundario);
+}
+
+h1{
+    padding-left: 1%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+h1 a{
+    color: var(--color-texto-acento);
+    text-decoration: none;
+    transition: color var(--color-transicion-rapida);
+}
+
+h1 a:hover{
+    color: var(--color-fondo-principal);
+}
+
+.nav-bar ul{
+    padding-left: 0;
+    margin: 0.5rem;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar li a{
+    color: var(--color-texto-acento);
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: color var(--color-transicion-rapida);
+}
+
+.nav-bar li a:hover{
+    color: var(--color-fondo-secundario);
+}
+
+.lg-grup{
+    display: flex;
+    gap: 1.5rem;
+    color: var(--color-texto-acento);
+}
+
+.lg-grup a,
+.btn-login {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--radius-pequeno);
+    cursor: pointer;
+    background-color: var(--color-acento-azul);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background var(--color-transicion-rapida);
+}
+
+.lg-grup a:hover,
+.btn-login:hover {
+    background-color: var(--color-acento-hover-nav);
+}

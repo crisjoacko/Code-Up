@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <script defer src="Js/userperfil.js"></script>
-    <link rel="stylesheet" href="Css/userperfi.css">
+    <link rel="stylesheet" href="../Assets/Css/global.css">
+    <script defer src="../Assets/Js/userperfil.js"></script>
+    <link rel="stylesheet" href="../Assets/Css/userperfi.css">
 </head>
 <body>
-    <header class="cabecera-perfil">
-        <h2>CodeUp</h2>
-        <nav class="navegacion-perfil">
+    <header class="cabecera" id="home">
+        <h1><a href="../codeup.html">Code Up</a></h1>
+        <nav class="nav-bar">
             <ul>
-                <li>Mi progreso</li>
-                <li>Cursos</li>
-                <li>Ejercicios</li>
+                <li class="list"><a href="../InfoPage/nosotros.html">Nosotros</a></li>
+                <li class="list"><a href="../Cursos/cursos.html">Cursos</a></li>
+                <li class="list"><a href="../InfoPage/recursos.html">Recursos</a></li>
             </ul>
-            <div class="config">
-                <a href="#" role="button">engranaje</a>
-                <a href="#" role="button">Perfil</a> 
-            </div>
         </nav>
+        <div class="lg-grup">
+            <a href="../Auth/registro.html" class="btn-login" id="btn-register" role="button">Aplicar ahora</a>
+            <a class="btn-login" href="../Auth/login.html" role="button" id="btn-login">Perfil</a>
+        </div>
     </header>
     <main>
         <section class="contenedor-main">

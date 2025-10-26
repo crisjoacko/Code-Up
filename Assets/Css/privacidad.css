@@ -1,0 +1,143 @@
+/* Privacidad - estilos específicos. Global.css se carga primero. */
+
+:root {
+  --bg-1: #0f172a; /* fondo principal */
+  --bg-2: #111827; /* paneles */
+  --card: #0b1220;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --brand: #22d3ee;
+  --brand-2: #60a5fa;
+  --border: #1f2937;
+}
+
+body {
+  background: var(--bg-1);
+  color: var(--text);
+}
+
+.privacy-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.privacy-hero {
+  background: linear-gradient(180deg, rgba(34,211,238,0.08), rgba(17,24,39,0.25));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  margin: 12px 0 24px;
+}
+
+.privacy-hero h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.privacy-hero p { color: var(--muted); }
+
+/* Acordeón accesible con <details> */
+.privacy-accordion {
+  display: grid;
+  gap: 12px;
+}
+
+.privacy-accordion details {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.privacy-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 20px;
+  position: relative;
+  font-weight: 600;
+}
+
+/* Indicador de apertura */
+.privacy-accordion summary::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+}
+
+.privacy-accordion details[open] summary::after { content: "−"; }
+
+.accordion-content {
+  border-top: 1px solid var(--border);
+  padding: 16px 20px 20px;
+  background: var(--card);
+}
+
+.accordion-content p { color: var(--text); }
+.accordion-content ul { margin-left: 16px; }
+.accordion-content li { color: var(--muted); margin: 4px 0; }
+
+/* CTA final */
+.privacy-cta { margin-top: 28px; }
+
+.cta-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.cta-card h3 { font-size: 20px; }
+.cta-card p { color: var(--muted); }
+
+/* Reutiliza .btn-login del global para botones */
+.cta-card .btn-login {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  border: none;
+}
+
+/* =============================
+    Overrides del Header/Nav (Privacidad)
+   ============================= */
+.cabecera {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.cabecera h1 a { color: var(--text); }
+
+.nav-bar ul { gap: 1.25rem; }
+
+.nav-bar li a {
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+.nav-bar li a:hover { color: var(--brand-2); }
+
+.lg-grup .btn-login {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+}
+
+.lg-grup .btn-login:hover { filter: brightness(0.95); }
+
+/* Responsive */
+@media (max-width: 960px) {
+  .privacy-container { padding: 20px 12px 48px; }
+  .privacy-hero h2 { font-size: 24px; }
+}
+
+@media (max-width: 640px) {
+  .cta-card { flex-direction: column; align-items: flex-start; }
+  .privacy-hero { padding: 22px; }
+  .privacy-accordion summary { padding: 16px; }
+  .accordion-content { padding: 14px 16px 16px; }
+}
